@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>*{box-sizing:border-box;} body{margin:0;background:#fbfdf4;} a{color:#3a3f2e;text-decoration:none;} a:hover{color:#5f7022;}</style>
+<script src="./image-slot.js"></script>
+</helmet>
+<div data-screen-label="Ministries" style="font-family:Figtree,sans-serif;background:#fbfdf4;color:#23271a;min-height:100vh;">
+  <dc-import name="Nav" hint-size="100%,130px"></dc-import>
+
+  <div style="position:relative;padding:64px 44px 44px;text-align:center;overflow:hidden;">
+    <div style="position:absolute;top:-90px;right:-70px;width:280px;height:280px;border-radius:50%;background:#eef6c6;opacity:.7;"></div>
+    <div style="position:relative;">
+      <div style="font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#5f7022;margin-bottom:16px;">Ministries</div>
+      <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:56px;line-height:1.02;letter-spacing:-.02em;margin:0 auto 18px;max-width:760px;color:#20240f;">A place for every person.</h1>
+      <p style="font-size:17.5px;line-height:1.6;color:#5a5f4c;margin:0 auto;max-width:560px;">From nursery through grief support, there's a ministry to help you and your family grow, serve, and belong.</p>
+    </div>
+  </div>
+
+  <div style="max-width:1180px;margin:0 auto;padding:10px 44px 30px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px;">
+    <div id="youth" style="grid-column:1/-1;background:#23271a;color:#f1f4e6;border-radius:20px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;">
+      <div>
+        <div style="width:52px;height:52px;border-radius:16px;background:#bcd530;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;">🧒</div>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:28px;font-weight:800;letter-spacing:-.01em;margin:0 0 12px;">Youth &amp; Kids</h2>
+        <p style="font-size:15px;line-height:1.65;color:#c2c6b4;margin:0;">Age-specific teaching, worship through song, and small groups impact our students' lives — plus retreats, mission trips, and service projects in the local community. Volunteers are background-checked, and check-in is safe and secure.</p>
+      </div>
+      <div style="border-radius:16px;overflow:hidden;aspect-ratio:4/3;position:relative;">
+        <image-slot id="ministries-youth" shape="rect" src="youth_2520x1890_500-mrv8hcod-3zc0.jpg" placeholder="Drop a youth group photo"></image-slot>
+      </div>
+    </div>
+    <div style="background:#bcd530;border-radius:20px;padding:32px 28px;">
+      <div style="width:52px;height:52px;border-radius:16px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;">👶</div>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:23px;font-weight:700;margin:0 0 10px;color:#20240f;">Nursery</h2>
+      <p style="font-size:14.5px;line-height:1.6;color:#404417;margin:0;">A safe, nurturing environment for your littlest ones every Sunday, with a thorough registration system.</p>
+    </div>
+    <div id="groups" style="background:#fff;border:1px solid #eaefd6;border-radius:20px;padding:32px 28px;">
+      <div style="width:52px;height:52px;border-radius:16px;background:#eef6c6;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;">🤝</div>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:23px;font-weight:700;margin:0 0 10px;color:#20240f;">Small Groups</h2>
+      <p style="font-size:14.5px;line-height:1.6;color:#6b6f59;margin:0 0 14px;">Real friendship and spiritual growth happen best in circles, not rows. Sign up and get connected.</p>
+      <a href="https://gastoncommunitychurch.com/small-groups-signup" style="color:#5f7022;font-weight:800;font-size:14px;">Small groups signup →</a>
+    </div>
+    <div style="background:#fff;border:1px solid #eaefd6;border-radius:20px;padding:32px 28px;">
+      <div style="width:52px;height:52px;border-radius:16px;background:#eef6c6;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;">🌸</div>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:23px;font-weight:700;margin:0 0 10px;color:#20240f;">Women's Ministry</h2>
+      <p style="font-size:14.5px;line-height:1.6;color:#6b6f59;margin:0;">Bible study, fellowship, and encouragement for women in every season of life.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #eaefd6;border-radius:20px;padding:32px 28px;">
+      <div style="width:52px;height:52px;border-radius:16px;background:#eef6c6;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;">🛠️</div>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:23px;font-weight:700;margin:0 0 10px;color:#20240f;">Men's Ministry</h2>
+      <p style="font-size:14.5px;line-height:1.6;color:#6b6f59;margin:0;">Brotherhood, accountability, and service — men sharpening men.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #eaefd6;border-radius:20px;padding:32px 28px;">
+      <div style="width:52px;height:52px;border-radius:16px;background:#eef6c6;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;">💜</div>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:23px;font-weight:700;margin:0 0 10px;color:#20240f;">GriefShare</h2>
+      <p style="font-size:14.5px;line-height:1.6;color:#6b6f59;margin:0;">A caring group for anyone walking through the loss of a loved one. You don't have to grieve alone.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #eaefd6;border-radius:20px;padding:32px 28px;">
+      <div style="width:52px;height:52px;border-radius:16px;background:#eef6c6;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;">🏘️</div>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:23px;font-weight:700;margin:0 0 10px;color:#20240f;">Local Missions</h2>
+      <p style="font-size:14.5px;line-height:1.6;color:#6b6f59;margin:0;">Serving our neighbors across Gaston County with practical love in Jesus' name.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #eaefd6;border-radius:20px;padding:32px 28px;">
+      <div style="width:52px;height:52px;border-radius:16px;background:#eef6c6;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;">🌍</div>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:23px;font-weight:700;margin:0 0 10px;color:#20240f;">Foreign Missions</h2>
+      <p style="font-size:14.5px;line-height:1.6;color:#6b6f59;margin:0;">Taking the gospel to the nations — from Nicaragua to Pakistan and beyond.</p>
+    </div>
+  </div>
+
+  <div style="max-width:1092px;margin:30px auto 64px;padding:0 44px;">
+    <div style="background:#bcd530;border-radius:26px;padding:46px 50px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;">
+      <div style="max-width:560px;">
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;letter-spacing:-.02em;margin:0 0 8px;color:#20240f;">Not sure where to start?</h2>
+        <p style="font-size:15.5px;color:#41461a;margin:0;line-height:1.55;">Come on a Sunday and we'll help you find the right fit for your family.</p>
+      </div>
+      <a href="ImNew.dc.html" style="background:#23271a;color:#dfff86;padding:15px 30px;border-radius:40px;font-weight:800;font-size:15.5px;">Plan Your Visit</a>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,360px"></dc-import>
+</div>
+</x-dc>
+</body>
+</html>

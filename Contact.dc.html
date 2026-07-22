@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>*{box-sizing:border-box;} body{margin:0;background:#fbfdf4;} a{color:#3a3f2e;text-decoration:none;} a:hover{color:#5f7022;}</style>
+</helmet>
+<div data-screen-label="Contact" style="font-family:Figtree,sans-serif;background:#fbfdf4;color:#23271a;min-height:100vh;">
+  <dc-import name="Nav" hint-size="100%,130px"></dc-import>
+
+  <div style="position:relative;padding:64px 44px 44px;text-align:center;overflow:hidden;">
+    <div style="position:absolute;top:-90px;right:-70px;width:280px;height:280px;border-radius:50%;background:#eef6c6;opacity:.7;"></div>
+    <div style="position:relative;">
+      <div style="font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#5f7022;margin-bottom:16px;">Contact us</div>
+      <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:56px;line-height:1.02;letter-spacing:-.02em;margin:0 auto 18px;max-width:760px;color:#20240f;">Say hello.</h1>
+      <p style="font-size:17.5px;line-height:1.6;color:#5a5f4c;margin:0 auto;max-width:520px;">Questions about visiting, ministries, or anything else — we'd love to hear from you.</p>
+    </div>
+  </div>
+
+  <div style="max-width:1092px;margin:0 auto;padding:10px 44px;display:grid;grid-template-columns:1fr 1.3fr;gap:20px;align-items:start;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div style="background:#fff;border:1px solid #eaefd6;border-radius:20px;padding:28px;">
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:20px;font-weight:700;margin:0 0 8px;color:#20240f;">📞 Phone</h2>
+        <a href="tel:7042155508" style="font-size:15px;font-weight:700;color:#5f7022;">(704) 215-5508</a>
+      </div>
+      <div style="background:#fff;border:1px solid #eaefd6;border-radius:20px;padding:28px;">
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:20px;font-weight:700;margin:0 0 8px;color:#20240f;">🕙 Sundays</h2>
+        <p style="font-size:14.5px;line-height:1.6;color:#6b6f59;margin:0;">Worship at 10:00am<br>400 Airport Road (next to Gaston Day School)<br>Gastonia, NC 28056</p>
+      </div>
+      <div style="background:#fff;border:1px solid #eaefd6;border-radius:20px;padding:28px;">
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:20px;font-weight:700;margin:0 0 8px;color:#20240f;">✉️ Mail</h2>
+        <p style="font-size:14.5px;line-height:1.6;color:#6b6f59;margin:0;">P.O. Box 550741<br>Gastonia, NC 28055</p>
+      </div>
+      <div style="background:#23271a;border-radius:20px;padding:28px;">
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:20px;font-weight:700;margin:0 0 12px;color:#f1f4e6;">Follow us</h2>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14.5px;font-weight:700;">
+          <a href="https://www.facebook.com/GastonCommunityChurch/" style="color:#bcd530;">Facebook</a>
+          <a href="https://www.instagram.com/gaston_community_church" style="color:#bcd530;">Instagram</a>
+          <a href="https://www.youtube.com/@gastoncommunitychurch6944" style="color:#bcd530;">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div style="border-radius:20px;overflow:hidden;border:1px solid #eaefd6;background:#fff;">
+      <iframe src="https://www.google.com/maps?q=400+Airport+Road,+Gastonia,+NC+28056&output=embed" title="Map to Gaston Community Church" style="width:100%;height:560px;border:0;display:block;"></iframe>
+    </div>
+  </div>
+
+  <div style="height:64px;"></div>
+  <dc-import name="Footer" hint-size="100%,360px"></dc-import>
+</div>
+</x-dc>
+</body>
+</html>
