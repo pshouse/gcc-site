@@ -3,7 +3,10 @@
 The refreshed website for Gaston Community Church (Gastonia, NC), originally
 generated with Claude Design and published as a static site via **GitHub Pages**.
 
-**Live site:** https://pshouse.github.io/gcc-site/
+**Live site:** https://gastoncommunitychurch.com (custom domain on GitHub
+Pages; `pshouse.github.io/gcc-site` redirects here. DNS is managed at
+GoDaddy — apex A records point to GitHub's Pages IPs, `www` is a CNAME to
+`pshouse.github.io`.)
 
 **This repo is the source of truth.** The Claude Design export was a one-time
 starting point; all ongoing edits are made directly to the files in this repo
