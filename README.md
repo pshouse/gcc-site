@@ -20,7 +20,8 @@ is fully static — no build step and no server code.
 
 - `index.html` — entry point; redirects to `Home.dc.html`.
 - `Home.dc.html`, `About.dc.html`, `Ministries.dc.html`, `Events.dc.html`,
-  `Media.dc.html`, `Give.dc.html`, `ImNew.dc.html`, `Contact.dc.html` — pages.
+  `Media.dc.html`, `Give.dc.html`, `ImNew.dc.html`, `Contact.dc.html`,
+  `SmallGroups.dc.html` — pages.
 - `Nav.dc.html`, `Footer.dc.html` — shared components imported by the pages.
 - `support.js`, `image-slot.js` — Claude Design runtime.
 - `assets/` — logos and hero image.
