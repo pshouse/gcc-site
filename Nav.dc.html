@@ -11,15 +11,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>*{box-sizing:border-box;} a{color:#3a3f2e;text-decoration:none;} a:hover{color:#5f7022;}</style>
+<style>*{box-sizing:border-box;} a{color:#3a3f2e;text-decoration:none;} a:hover{color:#5f7022;}
+@media (max-width:760px){
+  .gcc-nav-bar{justify-content:center !important;padding:16px 20px !important;}
+  .gcc-nav-links{justify-content:center !important;gap:14px 20px !important;}
+}</style>
 </helmet>
 <div style="font-family:Figtree,sans-serif;background:#fbfdf4;">
   <sc-if value="{{ bannerOn }}" hint-placeholder-val="{{ true }}">
     <div style="background:#433a52;color:#efe9f2;font-size:13.5px;font-weight:600;letter-spacing:.02em;text-align:center;padding:9px 20px;">Join us Sundays at 10:00am · 400 Airport Road, Gastonia NC · New here? We'd love to meet you.</div>
   </sc-if>
-  <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 44px;gap:20px;flex-wrap:wrap;">
+  <div class="gcc-nav-bar" style="display:flex;align-items:center;justify-content:space-between;padding:18px 44px;gap:20px;flex-wrap:wrap;">
     <a href="Home.dc.html"><img src="assets/logo-dark.png" alt="Gaston Community Church" style="height:46px;width:auto;display:block;"></a>
-    <div style="display:flex;align-items:center;gap:26px;font-size:14.5px;font-weight:600;">
+    <div class="gcc-nav-links" style="display:flex;align-items:center;flex-wrap:wrap;gap:26px;font-size:14.5px;font-weight:600;">
       <a href="About.dc.html">About</a>
       <a href="Ministries.dc.html">Ministries</a>
       <a href="Events.dc.html">Events</a>

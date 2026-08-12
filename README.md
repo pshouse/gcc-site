@@ -1,7 +1,14 @@
 # Gaston Community Church — Website
 
-The refreshed website for Gaston Community Church (Gastonia, NC), generated with
-Claude Design and published as a static site via **GitHub Pages**.
+The refreshed website for Gaston Community Church (Gastonia, NC), originally
+generated with Claude Design and published as a static site via **GitHub Pages**.
+
+**Live site:** https://pshouse.github.io/gcc-site/
+
+**This repo is the source of truth.** The Claude Design export was a one-time
+starting point; all ongoing edits are made directly to the files in this repo
+(by hand or with Claude Code) and published by pushing to `main`. Do not
+re-export from Claude Design — that would overwrite changes made here.
 
 ## How it works
 
@@ -39,5 +46,5 @@ branch → Branch: `main` / `root`**. Pushing to `main` updates the live site.
 
 ## Updating the site
 
-Re-export the site from Claude Design and copy the updated `.dc.html` files and
-`assets/` over the existing ones, then commit and push.
+Edit the `.dc.html` files (and `assets/`) directly in this repo, then commit and
+push to `main`. GitHub Pages redeploys automatically within a minute or two.
