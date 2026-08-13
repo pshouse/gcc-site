@@ -27,6 +27,9 @@ is fully static — no build step and no server code.
   `SmallGroups.dc.html` — pages.
 - `Nav.dc.html`, `Footer.dc.html` — shared components imported by the pages.
 - `support.js`, `image-slot.js` — Claude Design runtime.
+- Each page's `<head>` carries the Google Analytics 4 tag (measurement ID
+  `G-TMDQZG2HF9`, same property the old Subsplash site reported to). `Nav`,
+  `Footer`, and `index.html` are intentionally untagged (components / redirect).
 - `assets/` — logos and hero image.
 - `.nojekyll` — tells GitHub Pages to serve the files as-is (no Jekyll processing).
 
