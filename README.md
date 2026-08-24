@@ -29,9 +29,11 @@ is fully static — no build step and no server code.
   `SmallGroups.dc.html` — pages.
 - `Nav.dc.html`, `Footer.dc.html` — shared components imported by the pages.
 - `support.js`, `image-slot.js` — Claude Design runtime.
-- Each page's `<head>` carries the Google Analytics 4 tag (measurement ID
-  `G-TMDQZG2HF9`, same property the old Subsplash site reported to). `Nav`,
-  `Footer`, and `index.html` are intentionally untagged (components / redirect).
+- Every page's `<head>` carries the Google Analytics 4 tag (measurement ID
+  `G-TMDQZG2HF9`, same property the old Subsplash site reported to), including
+  `index.html`. `Nav` and `Footer` are untagged because they are components, and
+  the redirect stubs and `404.html` are untagged because an instant redirect
+  leaves the async tag no time to fire — the destination page records the visit.
 - `assets/` — logos and hero image.
 - `.nojekyll` — tells GitHub Pages to serve the files as-is (no Jekyll processing).
 - `404.html` — catch-all for old SnapPages URLs. Routes anything under `/media/`
@@ -41,6 +43,11 @@ is fully static — no build step and no server code.
   for old SnapPages URLs that still rank in Google. Each is an `index.html` that
   redirects to the page now carrying that content. Add a new one by creating
   `<old-path>/index.html`; keep the list in `404.html` in sync.
+- `sitemap.xml` — the nine real pages, for Google. The homepage is listed as `/`
+  only; `Home.dc.html` is left out because it canonicalises to `/`, and the
+  components and redirect stubs are not pages. Update `lastmod` when a page
+  changes materially.
+- `robots.txt` — allows everything and points crawlers at the sitemap.
 
 > Note: the runtime uses `fetch()` to load sibling pages, so the site must be
 > served over HTTP(S). Opening the files directly from disk (`file://`) will not
