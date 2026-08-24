@@ -5,12 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gaston Community Church</title>
 <link rel="canonical" href="Home.dc.html">
-<meta http-equiv="refresh" content="0; url=Home.dc.html">
+<noscript><meta http-equiv="refresh" content="0; url=Home.dc.html"></noscript>
 <style>
   html,body{height:100%;margin:0;background:#fbfdf4;font-family:system-ui,sans-serif;}
   .wrap{display:flex;align-items:center;justify-content:center;height:100%;color:#5f7022;}
 </style>
-<script>location.replace("Home.dc.html");</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TMDQZG2HF9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Record the visit to "/" before handing off to Home.dc.html. Analytics must
+  // never hold up the redirect, so whichever fires first wins: the tag's own
+  // callback, or the timeout below (which also covers the tag being blocked).
+  var moved = false;
+  function go(){ if (!moved) { moved = true; location.replace("Home.dc.html"); } }
+
+  gtag('config', 'G-TMDQZG2HF9', { send_page_view: false });
+  gtag('event', 'page_view', { event_callback: go, event_timeout: 700 });
+  setTimeout(go, 700);
+</script>
 </head>
 <body>
 <div class="wrap"><p>Redirecting to <a href="Home.dc.html">Gaston Community Church</a>&hellip;</p></div>
