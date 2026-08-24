@@ -34,6 +34,13 @@ is fully static — no build step and no server code.
   `Footer`, and `index.html` are intentionally untagged (components / redirect).
 - `assets/` — logos and hero image.
 - `.nojekyll` — tells GitHub Pages to serve the files as-is (no Jekyll processing).
+- `404.html` — catch-all for old SnapPages URLs. Routes anything under `/media/`
+  to the Media page, old `/page/…` links to the homepage, and shows a branded
+  "we've moved this page" screen for anything else.
+- `staff/`, `sermons/`, `ourbeliefs/`, `griefshare/`, … — one-line redirect stubs
+  for old SnapPages URLs that still rank in Google. Each is an `index.html` that
+  redirects to the page now carrying that content. Add a new one by creating
+  `<old-path>/index.html`; keep the list in `404.html` in sync.
 
 > Note: the runtime uses `fetch()` to load sibling pages, so the site must be
 > served over HTTP(S). Opening the files directly from disk (`file://`) will not
