@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page moved | Gaston Community Church</title>
+<script>
+// The old SnapPages site left a large tail of indexed URLs — mostly individual
+// sermon pages under /media/. Those cannot each get a stub file, so anything
+// that reaches this 404 page is routed here instead of dead-ending.
+(function () {
+  var p = location.pathname.replace(/\/+$/, "").toLowerCase();
+  var MAP = {
+    "/2026-talent-show": "/Events.dc.html",
+    "/about": "/About.dc.html",
+    "/contact-us": "/Contact.dc.html",
+    "/donate": "/Give.dc.html",
+    "/events": "/Events.dc.html",
+    "/foreign-mission": "/Ministries.dc.html",
+    "/griefshare": "/Ministries.dc.html",
+    "/home": "/",
+    "/im-new": "/ImNew.dc.html",
+    "/local-missions": "/Ministries.dc.html",
+    "/media/live": "/Media.dc.html",
+    "/men-s-ministry": "/Ministries.dc.html",
+    "/ministries": "/Ministries.dc.html",
+    "/mission-and-vision": "/About.dc.html",
+    "/news-media": "/Media.dc.html",
+    "/nursery": "/Ministries.dc.html",
+    "/ourbeliefs": "/About.dc.html",
+    "/sermons": "/Media.dc.html",
+    "/small-groups": "/SmallGroups.dc.html",
+    "/small-groups-signup": "/SmallGroups.dc.html",
+    "/staff": "/About.dc.html",
+    "/women-s-ministry": "/Ministries.dc.html",
+    "/worshipleader": "/About.dc.html",
+    "/youth-and-kids": "/Ministries.dc.html"
+  };
+  var to = MAP[p];
+  if (!to && p.indexOf("/media") === 0) to = "/Media.dc.html";   // sermons, speakers, topics, scripture
+  if (!to && p.indexOf("/page/") === 0) to = "/";                // old SnapPages internal pages
+  if (to) location.replace(to);
+})();
+</script>
+<style>
+  html,body{height:100%;margin:0;background:#fbfdf4;color:#23271a;
+            font-family:system-ui,-apple-system,sans-serif;}
+  .wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;
+        height:100%;text-align:center;padding:24px;}
+  h1{font-size:26px;margin:0 0 10px;}
+  p{margin:0 0 26px;color:#5f7022;}
+  nav a{display:inline-block;margin:6px 10px;color:#23271a;text-decoration:none;
+        border-bottom:2px solid #dfff86;padding-bottom:2px;font-weight:600;}
+  nav a:hover{color:#5f7022;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>We&rsquo;ve moved this page</h1>
+  <p>Our website was rebuilt, and this link is from the old version.</p>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/About.dc.html">About</a>
+    <a href="/Ministries.dc.html">Ministries</a>
+    <a href="/Events.dc.html">Events</a>
+    <a href="/Media.dc.html">Sermons &amp; Media</a>
+    <a href="/Give.dc.html">Give</a>
+    <a href="/ImNew.dc.html">Plan a Visit</a>
+  </nav>
+</div>
+</body>
+</html>
