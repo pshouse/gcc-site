@@ -21,7 +21,9 @@ and resolves shared components (`<dc-import name="Nav">`, `<dc-import name="Foot
 by fetching the sibling files. Because everything renders in the browser, the site
 is fully static — no build step and no server code.
 
-- `index.html` — entry point; redirects to `Home.dc.html`.
+- `index.html` — the homepage served at `/`. It renders `Home.dc.html` in place
+  via `<dc-import name="Home">`, so the site has one homepage URL and no
+  redirect. Edit the home page in `Home.dc.html` as usual.
 - `Home.dc.html`, `About.dc.html`, `Ministries.dc.html`, `Events.dc.html`,
   `Media.dc.html`, `Give.dc.html`, `ImNew.dc.html`, `Contact.dc.html`,
   `SmallGroups.dc.html` — pages.
